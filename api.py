@@ -1,4 +1,6 @@
 import webbrowser
+import time
+import random
 
 sku = input("please enter your product id: \n")
 
@@ -17,6 +19,8 @@ def msds():
 msds_file = msds()
 for link in msds_file:
     webbrowser.open(link)
+    time.sleep(random.randint(1,8))
+
 
 
 
